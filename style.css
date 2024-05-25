@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+  background-color: #191919;
+}
+
+
+
+header {
+  text-align: center;
+  color: white;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 50px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  flex: 1 1 30%;
+  /* margin-bottom: 1rem; */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0.1rem;
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.5), 0 6px 20px 0 rgba(255, 0, 0, 0.4);
+
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience ul li ul {
+  margin-left: 1rem;
+}
+
+.fit {
+  text-align: justify;
+}
+
+
+
+header::before, #about::before, #experience::before, #education::before, #skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7; /* Adjust to make text more readable over the image */
+    z-index: -1;
+}
+
+header::before {
+    /* background-image: url('social/images/blake-connally-B3l0g6HLxr8-unsplash.jpg'); */
+
+}
+
+#about {
+    /* background-image: url('social/images/brandi-redd-aJTiW00qqtI-unsplash.jpg');
+    background-size: contain; */
+        background-color: #FBF6EE;
+}
+
+#experience{
+    /* background-image: url('social/images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg');
+    background-size: contain; */
+    background-color: #FBF6EE;
+}
+
+#education {
+    /* background-image: url('path/to/your/education-image.jpg');
+    background-size: contain; */
+    background-color: #FBF6EE;
+}
+
+#skills{
+    /* background-image: url('path/to/your/skills-image.jpg');
+    background-size: contain; */
+    background-color: #FBF6EE;
+}
